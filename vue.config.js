@@ -4,6 +4,6 @@ module.exports = defineConfig({
     'vuetify'
   ],
   devServer: {
-    proxy: "http://https://bookmemory-server.onrender.com:3000"
+    proxy: "https://bookmemory-server-dygs.onrender.com"
   }
 })
