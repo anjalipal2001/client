@@ -1,6 +1,9 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import Vue from 'vue';
+import VueRouter from 'vue-router';
+import HomeView from '../views/HomeView.vue';
+import AddPost from '../views/AddPost.vue';
+import Post from '../views/Post.vue';
+import EditPost from '../views/EditPost.vue';
 
 Vue.use(VueRouter)
 
@@ -9,6 +12,21 @@ const routes = [
     path: '/',
     name: 'home',
     component: HomeView
+  },
+  {
+    path: '/add-post',
+    name: 'add',
+    component: AddPost
+  },
+  {
+    path: '/post/:id',
+    name: 'post',
+    component: Post,
+  },
+  {
+    path: '/edit/:id',
+    name: 'edit-post',
+    component: EditPost,
   },
   {
     path: '/about',
